@@ -2,7 +2,7 @@ package sub4;
 /**
  * 날짜 : 2026/05/04
  * 이름 : 한세류
- * 내용 : 
+ * 내용 : Java 상속 실습
  */
 
 public class InheritanceTest {
