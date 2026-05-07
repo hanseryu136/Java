@@ -1,0 +1,81 @@
+package sub9;
+/*
+ *  날짜 : 2026/05/07
+ *  이름 : 한세류
+ *  내용 : Java enum(열거상수) 실습
+ */
+
+enum Day {
+	MONDAY, TUESDAY, WEDNESDAY, TURSDAY, FRIDAY, SATURDAY, SUNDAY
+}
+
+
+public class EnumTest {
+	public static void main(String[] args) {
+		
+		// 열거 상수 객체 생성
+		Day today = Day.TURSDAY;
+		
+		switch(today) {
+		
+		case MONDAY:
+			System.out.println("월요일입니다.");
+			break;
+		case TUESDAY:
+			System.out.println("화요일입니다.");
+			break;
+		case WEDNESDAY:
+			System.out.println("수요일입니다.");
+			break;
+		case TURSDAY:
+			System.out.println("목요일입니다.");
+			break;
+		case FRIDAY:
+			System.out.println("금요일입니다.");
+			break;
+		case SATURDAY:
+			System.out.println("토요일입니다.");
+			break;
+		case SUNDAY:
+			System.out.println("일요일입니다.");
+			break;
+		}
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	}
+}
