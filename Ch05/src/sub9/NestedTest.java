@@ -47,14 +47,5 @@ public class NestedTest {
 		inn.show();
 		
 		
-		
-		
-		
-		
-		
-		
-		
-		
-		
 	}
 }
