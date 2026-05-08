@@ -11,7 +11,7 @@ public class Subject {
 		this.studentCount = studentCount;
 	}
 	
-	public void addStudent(Student) {
+	public void addStudent(Student student) {
 		
 	}
 	

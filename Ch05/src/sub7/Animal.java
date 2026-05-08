@@ -9,6 +9,6 @@ public abstract class Animal {
 	}
 	
 	// 추상 메서드 : 자식 클래스에서 재정의하는 메서드, 문법적으로 반드시 구현하게 강제
-	public abstract void hunt() {}
+	public abstract void hunt();
 	
 }
