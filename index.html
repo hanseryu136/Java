@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>사랑하는 엄마 아빠께</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: linear-gradient(135deg, #fff5f5 0%, #fed7d7 100%);
+            font-family: 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif;
+            overflow: hidden;
+        }
+
+        .card {
+            background: rgba(255, 255, 255, 0.9);
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 15px 35px rgba(255, 182, 193, 0.4);
+            text-align: center;
+            max-width: 500px;
+            width: 90%;
+            z-index: 10;
+            border: 2px solid #feb2b2;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        h1 {
+            color: #e53e3e;
+            font-size: 2.2rem;
+            margin-bottom: 20px;
+        }
+
+        p {
+            color: #4a5568;
+            font-size: 1.3rem;
+            line-height: 1.8;
+            margin-bottom: 30px;
+            word-break: keep-all;
+        }
+
+        .signature {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #c53030;
+            text-align: right;
+        }
+
+        /* 하트 애니메이션 */
+        .heart {
+            position: absolute;
+            color: #feb2b2;
+            font-size: 20px;
+            user-select: none;
+            animation: move 4s linear infinite;
+            opacity: 0;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes move {
+            0% { transform: translateY(100vh) rotate(0deg); opacity: 1; }
+            100% { transform: translateY(-10vh) rotate(360deg); opacity: 0; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <h1>🌹 사랑합니다 🌹</h1>
+        <p>
+            엄마, 아빠!<br>
+            언제나 저를 믿고 응원해 주셔서 감사합니다.<br>
+            두 분 항상 건강하시고 행복하세요.<br>
+            세상의 그 무엇보다 많이 사랑해요!
+        </p>
+        <div class="signature">세류 올림</div>
+    </div>
+
+    <script>
+        function createHeart() {
+            const heart = document.createElement('div');
+            heart.classList.add('heart');
+            heart.innerHTML = '❤️';
+            heart.style.left = Math.random() * 100 + 'vw';
+            heart.style.animationDuration = Math.random() * 2 + 3 + 's';
+            document.body.appendChild(heart);
+
+            setTimeout(() => {
+                heart.remove();
+            }, 5000);
+        }
+
+        setInterval(createHeart, 300);
+    </script>
+</body>
+</html>
