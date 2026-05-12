@@ -14,6 +14,7 @@ public class StringBuilderTest {
 		str += "Programming";
 		System.out.println("str : " + str.hashCode());
 		
+		
 		// StringBuilder로 메모리 절약
 		StringBuilder sb = new StringBuilder("Java");
 		System.out.println("sb : " + sb.hashCode());
